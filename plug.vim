@@ -12,6 +12,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 Plug 'andweeb/presence.nvim'
+Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
+Plug 'alvan/vim-closetag'
 
 if has("nvim")
   Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -23,6 +25,9 @@ endif
 Plug 'groenewege/vim-less', { 'for': 'less' }
 
 call plug#end()
+
+" delimitMate
+let delimitMate_expand_cr=1
 
 " Nerdtree
 let g:NERDTreeDirArrowExpandable="+"
@@ -52,3 +57,23 @@ let g:presence_reading_text        = "Reading %s"
 let g:presence_workspace_text      = "Working on %s"
 let g:presence_line_number_text    = "Line %s out of %s"
 
+" Prettier
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+" Coc
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" closetag
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.erb,*.jsx,*.tsx,*.ejs"
+let g:closetag_xhtml_filenames = '*.xhtml,*.jsx,*.erb'
+let g:closetag_emptyTags_caseSensitive = 1
+let g:closetag_shortcut = '>'
+let g:closetag_close_shortcut = '<leader>>'
