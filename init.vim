@@ -32,7 +32,7 @@ set backupskip=/tmp/*,/private/tmp/*
 set clipboard=unnamedplus
 
 
-nmap <C-s> :w<CR>
+nmap <C-s> :CocCommand prettier.formatFile<CR>:w<CR>
 
 nnoremap <C-q> :q<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
