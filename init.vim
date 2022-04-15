@@ -28,6 +28,10 @@ set mouse=a
 set shell=fish
 set backupskip=/tmp/*,/private/tmp/*
 
+set ts=2
+set sw=2
+set sts=2
+
 
 set clipboard=unnamedplus
 
