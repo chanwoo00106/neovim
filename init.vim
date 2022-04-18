@@ -86,6 +86,8 @@ autocmd InsertLeave * set nopaste
 " Add asterisks in block comments
 set formatoptions+=r
 
+let g:neovide_cursor_vfx_mode = "railgun"
+
 "}}}
 
 " Highlights "{{{

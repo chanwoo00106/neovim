@@ -15,6 +15,9 @@ Plug 'andweeb/presence.nvim'
 Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
 Plug 'alvan/vim-closetag'
 Plug 'pantharshit00/vim-prisma'
+Plug 'othree/html5.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'evanleck/vim-svelte', {'branch': 'main'}
 
 if has("nvim")
   Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -78,3 +81,8 @@ let g:closetag_xhtml_filenames = '*.xhtml,*.jsx,*.erb'
 let g:closetag_emptyTags_caseSensitive = 1
 let g:closetag_shortcut = '>'
 let g:closetag_close_shortcut = '<leader>>'
+
+" svelte
+let g:svelte_indent_script = 0
+let g:svelte_indent_style = 0
+let g:svelte_preprocessors = ['typescript']

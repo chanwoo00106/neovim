@@ -7,8 +7,10 @@
     "json",
     "javascriptreact",
     "typescript.tsx",
-    "graphql"
+    "graphql",
+    "svelte"
   ],
   "eslint.alwaysShowStatus": true,
-  "eslint.autoFixOnSave": true
+  "eslint.autoFixOnSave": true,
+  "files.associations": { "*.svelte": "html" }
 }
