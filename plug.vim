@@ -18,6 +18,8 @@ Plug 'pantharshit00/vim-prisma'
 Plug 'othree/html5.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'evanleck/vim-svelte', {'branch': 'main'}
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ekalinin/Dockerfile.vim'
 
 if has("nvim")
   Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -86,3 +88,6 @@ let g:closetag_close_shortcut = '<leader>>'
 let g:svelte_indent_script = 0
 let g:svelte_indent_style = 0
 let g:svelte_preprocessors = ['typescript']
+
+" ctrlp
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe
