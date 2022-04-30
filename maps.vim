@@ -1,4 +1,4 @@
-" Description: Keymaps
+ Description: Keymaps
 
 nnoremap <S-C-p> "0p
 " Delete without yank
@@ -17,6 +17,9 @@ nmap <C-a> gg<S-v>G
 
 " undo
 nnoremap <C-z> :u<CR>
+
+" Nerdtree
+nnoremap <C-t> :NERDTreeToggle<CR>
 
 " Save with root permission
 command! W w !sudo tee > /dev/null %

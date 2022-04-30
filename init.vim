@@ -109,8 +109,6 @@ autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
 
-autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js EslintFixAll
-
 "}}}
 
 " Imports "{{{
