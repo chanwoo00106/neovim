@@ -31,7 +31,7 @@ if has("nvim")
   Plug 'windwp/nvim-autopairs'
   Plug 'windwp/nvim-ts-autotag'
   Plug 'andweeb/presence.nvim'
-  Plug 'jose-elias-alvarez/null-ls.nvim'
+  Plug 'dense-analysis/ale'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
