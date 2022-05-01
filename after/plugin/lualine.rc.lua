@@ -11,7 +11,7 @@ lualine.setup {
   },
   sections = {
     lualine_a = {'mode'},
-    lualine_b = {'branch'},
+    lualine_b = {'branch', 'diff', 'diagnostics'},
     lualine_c = {{
       'filename',
       file_status = true, -- displays file status (readonly status, modified status)

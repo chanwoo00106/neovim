@@ -154,8 +154,10 @@ set exrc
 
 let g:ale_fixers = {
 \   'javascript': ['prettier'],
+\   'javascriptreact': ['prettier'],
 \   'css': ['prettier'],
 \   'typescript': ['prettier'],
+\   'typescriptreact': ['prettier'],
 \}
 
 let g:ale_linters_explicit = 1
