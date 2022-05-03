@@ -32,6 +32,8 @@ if has("nvim")
   Plug 'windwp/nvim-ts-autotag'
   Plug 'andweeb/presence.nvim'
   Plug 'dense-analysis/ale'
+  Plug 'pantharshit00/vim-prisma'
+  Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
