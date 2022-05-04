@@ -94,6 +94,20 @@ nvim_lsp.flow.setup {
   capabilities = capabilities
 }
 
+-- prisma
+nvim_lsp.prismals.setup{}
+
+-- css
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+nvim_lsp.cssls.setup{
+  capabilities = capabilities,
+}
+
+-- emotion, styled-components
+nvim_lsp.cssmodules_ls.setup{}
+
 nvim_lsp.tsserver.setup {
   on_attach = on_attach,
   filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
