@@ -105,6 +105,9 @@ nvim_lsp.cssls.setup{
   capabilities = capabilities,
 }
 
+-- javascript
+nvim_lsp.quick_lint_js.setup{}
+
 -- emotion, styled-components
 nvim_lsp.cssmodules_ls.setup{}
 

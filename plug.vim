@@ -33,6 +33,7 @@ if has("nvim")
   Plug 'andweeb/presence.nvim'
   Plug 'dense-analysis/ale'
   Plug 'pantharshit00/vim-prisma'
+  Plug 'chr4/nginx.vim'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
