@@ -108,9 +108,6 @@ nvim_lsp.cssls.setup{
 -- javascript
 nvim_lsp.quick_lint_js.setup{}
 
--- emotion, styled-components
-nvim_lsp.cssmodules_ls.setup{}
-
 nvim_lsp.tsserver.setup {
   on_attach = on_attach,
   filetypes = { "typescript", "typescriptreact", "typescript.tsx" },

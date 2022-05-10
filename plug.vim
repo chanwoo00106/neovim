@@ -34,6 +34,7 @@ if has("nvim")
   Plug 'dense-analysis/ale'
   Plug 'pantharshit00/vim-prisma'
   Plug 'chr4/nginx.vim'
+  Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
