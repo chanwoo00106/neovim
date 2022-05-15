@@ -35,6 +35,8 @@ if has("nvim")
   Plug 'pantharshit00/vim-prisma'
   Plug 'chr4/nginx.vim'
   Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+  Plug 'numToStr/Comment.nvim'
+  Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }

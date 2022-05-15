@@ -20,6 +20,8 @@ nnoremap <C-z> :u<CR>
 
 " Nerdtree
 nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap . :bn<CR>
+nnoremap , :bp<CR>
 
 " Save with root permission
 command! W w !sudo tee > /dev/null %
