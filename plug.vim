@@ -37,6 +37,8 @@ if has("nvim")
   Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
   Plug 'numToStr/Comment.nvim'
   Plug 'JoosepAlviste/nvim-ts-context-commentstring'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'Xuyuanp/nerdtree-git-plugin'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
