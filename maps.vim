@@ -38,6 +38,9 @@ vnoremap <silent> # :<C-U>
   \escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
   \gV:call setreg('"', old_reg, old_regtype)<CR>
 
+inoremap jk <ESC>
+inoremap kj <ESC>
+
 "-----------------------------
 " Tabs
 
